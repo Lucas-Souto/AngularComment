@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+
+<div id="comments">
+    <div *ngFor="let comment of comments">
+        <comment author="{{ comment.author }}" content="{{ comment.content }}" liked="{{ comment.liked ? 'true' : '' }}"></comment>
+    </div>
+</div>
+
+<comment-form></comment-form>
